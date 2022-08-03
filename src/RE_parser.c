@@ -16,16 +16,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define MAX_CONTENT_LEN 16 // Max characters of the content of a node.
-#define MAX_CHILDS 4 // Max number of childs for a variable in the parse tree.
-#define INDENTATION 1 // Child indentation when the parse tree is printed.
-
 /**** Parse tree functions and data structures. ****/
-struct Node
-{
-  char content   [MAX_CONTENT_LEN];
-  Node * childs [MAX_CHILDS];
-};
 
 Node * node_new (void)
 {
@@ -379,6 +370,8 @@ bool parse (const char *reg_expr, Node *p_node)
   return false;
 }
 
+/*
+
 int main (int argc, char **argv)
 {
   // Input checks.
@@ -415,3 +408,4 @@ int main (int argc, char **argv)
 
   return 0;
 }
+*/
